@@ -73,9 +73,9 @@ nav ul li a:hover {
 
 /* General container to center the content */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Hero Section */
@@ -232,7 +232,6 @@ button:hover {
     }
 
     .nav-links {
-        /* Initially collapsed */
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -240,10 +239,10 @@ button:hover {
         background-color: #fff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         width: 100%;
-        max-height: 0; /* Start with zero height */
-        opacity: 0; /* Start fully transparent */
-        overflow: hidden; /* Prevent overflow */
-        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition for height and opacity */
+        max-height: 0; 
+        opacity: 0; 
+        overflow: hidden; 
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; 
     }
 
     .nav-links li {
