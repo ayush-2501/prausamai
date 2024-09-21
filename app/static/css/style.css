@@ -95,26 +95,31 @@ nav ul li a:hover {
 }
 
 .hero-container {
-    width: 100%; 
-    max-width: none; 
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0; 
-    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    gap: 2rem; 
+    padding: 2rem; 
 }
 
 .hero-content {
-    max-width: 50%;
+    max-width: 45%;
     text-align: center;
 }
 
-.hero-video video {
+.hero-video {
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-video video {
+    width: 100%; 
     height: auto;
-    max-width: 400px;
-    object-fit: cover;
-    border-radius: 15px;
+    object-fit: contain; 
+    max-width: 400px; 
+    margin: 0 auto; 
 }
 
 .hero-content h1 {
@@ -134,14 +139,19 @@ nav ul li a:hover {
 }
 
 .cta-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    text-align: center;
     background-color: #6a0dad;
     color: white;
-    padding: 0.8rem 2rem;
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     border: none;
+    max-width: 300px; 
+    width: 100%;
 }
 
 .cta-btn:hover {
@@ -283,24 +293,38 @@ button:hover {
         margin-right: 1rem;
     }
 
-    .hero-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
+    header {
+        position: relative;
+        height: auto; 
     }
 
-    .hero-video {
-        width: 100%; 
+    .hero-container {
+        margin-top: 0;
     }
 
     .hero-content {
-        max-width: 100%;
-        text-align: center;
+        order: 1; 
+        max-width: 90%;
+        margin-bottom: 1rem;
     }
 
     .cta-btn {
+        order: 2; 
         width: 100%;
-        max-width: 300px;
+        max-width: 300px; 
+        margin: 1rem auto; 
+    }
+
+    .hero-video {
+        order: 3; 
+        width: 100%; 
+        max-width: 400px; 
+    }
+
+    .hero-video video {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
     }
 
     #hero h1 {
