@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prausam AI</title>
+    <title>{% block title %}Prausam AI{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <!-- Favicon -->
     <link rel="icon" href="{{ url_for('static', filename='logo/logo_symbol_black.png') }}" type="image/x-icon">
@@ -13,7 +13,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='logo/logo_symbol_black_16.png') }}">
 </head>
 <body>
+    <!-- Include the navigation bar -->
+    {% include 'navbar.html' %}
+
+    <!-- Main content -->
     {% block content %}{% endblock %}
+
+    <!-- Include the footer -->
+    {% include 'footer.html' %}
+
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
