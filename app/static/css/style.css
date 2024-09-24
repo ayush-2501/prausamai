@@ -915,8 +915,8 @@ nav {
 }
 
 .social-icon {
-  width: 48px;
-  height: 48px;
+  width: 30px;
+  height: 30px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -947,25 +947,28 @@ nav {
 }
 
 .footer-link {
-  color: rgba(255, 255, 255, 0.81);
+  color: rgba(221, 221, 221, 0.81);
   font-size: 17px;
   text-decoration: none;
   margin: 5px 0;
 }
 
 .footer-link:hover {
-  text-decoration: underline;
+  color: rgb(255, 255, 255);
 }
 
 .footer-bottom {
-  background: #282829;
+  background: #000000;
   text-align: center;
   padding: 15px 0;
+  opacity: 0.6;
 }
 
 .footer-copy {
+  color: rgb(255, 255, 255);
   margin: 0;
   font-size: 17px;
+  z-index: 1100;
 }
 
 /* Responsive Styles */

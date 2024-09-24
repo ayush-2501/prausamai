@@ -21,3 +21,7 @@ def about():
 @main_blueprint.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@main_blueprint.route('/tools')
+def tools():
+    return render_template('tools.html')

@@ -1,0 +1,67 @@
+/* General container styles */
+.ToolsPage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tools Section container */
+.ToolsSectionContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1280px;
+  padding: 20px;
+}
+
+/* Individual tool column */
+.ToolColumn {
+  border-radius: 16px;
+  text-align: center;
+  padding: 20px;
+}
+
+.ToolColumn img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.ToolColumn p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #171c1d;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Title and subtitle */
+.ToolsTextContainer {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ToolsTitle {
+  font-size: 48px;
+  font-weight: 700;
+  color: #171c1d;
+}
+
+.ToolsSubtitle {
+  font-size: 16px;
+  color: #171c1d;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ToolsTitle {
+    font-size: 36px;
+  }
+  
+  .ToolsSubtitle {
+    font-size: 14px;
+  }
+}
