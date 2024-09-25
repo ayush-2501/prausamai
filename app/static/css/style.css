@@ -425,28 +425,6 @@ nav {
   clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1200px) {
-  .ad-banner-heading {
-    font-size: 40px;
-  }
-
-  .video-player {
-    width: 90%;
-    height: auto;
-  }
-
-  .play-button {
-    width: 100px;
-    height: 100px;
-  }
-
-  .play-icon {
-    width: 24px;
-    height: 27px;
-  }
-}
-
 /* Product Section */
 .product-section {
   display: flex;
