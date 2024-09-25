@@ -22,6 +22,7 @@ def about():
 def contact():
     return render_template('contact.html')
 
-@main_blueprint.route('/tools')
+# Route for the photoeditor page
+@main_blueprint.route('/photoeditor')
 def tools():
-    return render_template('tools.html')
+    return render_template('photoeditor.html')
