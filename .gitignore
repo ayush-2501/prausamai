@@ -1,4 +1,4 @@
 prausamai
 activate_env.bat
 notes.txt
-app\__pycache__
+__pycache__

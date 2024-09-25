@@ -24,5 +24,10 @@ def contact():
 
 # Route for the photoeditor page
 @main_blueprint.route('/photoeditor')
-def tools():
+def photoeditor():
     return render_template('photoeditor.html')
+
+# Route for the AIImageTools page
+@main_blueprint.route('/ai-image-editor')
+def aiimageeditor():
+    return render_template('ai-image-editor.html')
