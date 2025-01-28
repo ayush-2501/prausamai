@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo">
+          <h2>Prausam</h2>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="/" class="nav-item active">
+            <i class="fas fa-th-large"></i>
+            Dashboard
+          </a>
+          <a href="/page2.html" class="nav-item">
+            <i class="fas fa-camera"></i>
+            AI Studio
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-chart-line"></i>
+            Prausam GPT
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-cog"></i>
+            Settings
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-book"></i>
+            Resources
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Tools Section -->
+        <div class="tools-section">
+          <div class="tools-sidebar">
+            <div class="tool-item">
+              <i class="fas fa-camera"></i>
+              Create
+            </div>
+            <div class="tool-item">
+              <i class="fas fa-folder"></i>
+              Assets
+            </div>
+            <div class="tool-item">
+              <i class="fas fa-layer-group"></i>
+              Layers
+            </div>
+            <div class="tool-item active">
+              <i class="fas fa-edit"></i>
+              Magic Edit
+            </div>
+            <div class="tool-item">
+              <i class="fas fa-th"></i>
+              Elements
+            </div>
+          </div>
+
+          <!-- Main Work Area -->
+          <div class="work-area">
+            <div class="toolbar">
+              <button class="tool-btn"><i class="fas fa-upload"></i> Upload</button>
+              <button class="tool-btn"><i class="fas fa-copy"></i></button>
+              <button class="tool-btn"><i class="fas fa-paste"></i></button>
+              <button class="tool-btn"><i class="fas fa-undo"></i></button>
+              <button class="tool-btn"><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="canvas-area">
+              <div class="drop-zone">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Drop or Paste your Image or Image URL</p>
+                <span>(up to 5MB)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+{% endblock %}

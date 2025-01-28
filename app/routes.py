@@ -31,3 +31,8 @@ def photoeditor():
 @main_blueprint.route('/ai-image-editor')
 def aiimageeditor():
     return render_template('ai-image-editor.html')
+
+# Route for the AIImageTools page
+@main_blueprint.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')
